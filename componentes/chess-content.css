@@ -1,0 +1,73 @@
+.chess__card {
+  border-radius: 20px;
+  background: rgba(63, 63, 63, 0.42);
+  opacity: 0.75;
+  z-index: 2;
+}
+
+.chess__image {
+  position: absolute;
+  top: -10%;
+  transform: translateX(-90px);
+  z-index: -1;
+  width: 190%;
+}
+
+.chess__shadow-1,
+.chess__shadow-2 {
+  position: absolute;
+}
+
+.chess__shadow-1 {
+  top: 55%;
+  left: -28%;
+}
+
+.chess__shadow-2 {
+  top: 67%;
+  left: 23%;
+}
+
+.chess__title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.chess__description {
+  font-weight: 400;
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 173%;
+}
+
+.chess__description--highlight {
+  color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+  .chess__image {
+    transform: translateX(0);
+    width: 150%;
+  }
+
+  .chess__description {
+    font-size: 15px;
+  }
+
+  .chess__title {
+    font-size: 34px;
+  }
+  .chess__card{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .chess__image {
+    transform: translateX(0);
+    width: 180%;
+  }
+
+}

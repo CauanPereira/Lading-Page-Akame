@@ -1,0 +1,91 @@
+.pricing__ellipse {
+  position: absolute;
+  top: -40%;
+  width: 60%;
+  z-index: -1;
+  left: 0;
+  height: auto;
+  pointer-events: none;
+}
+
+.pricing__title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.pricing__title--highlight {
+  background: linear-gradient(90deg, #12b347, #00df82);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing__card {
+  background: linear-gradient(
+      135deg,
+      rgba(170, 170, 170, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    #161b21;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  border-image: radial-gradient(
+      circle at 50% 50%,
+      #28d07e 0%,
+      rgba(40, 208, 126, 0) 100%
+    )
+    1;
+  backdrop-filter: blur(13px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pricing__text {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.pricing__price {
+  font-weight: 600;
+  font-size: 90px;
+  color: #28d07e;
+}
+
+.pricing__description {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 400;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .pricing__title {
+
+    font-size: 30px;
+    padding: 0 20px;
+  }
+
+  .pricing__text{
+
+    font-size: 20px;
+  }
+
+  .pricing__ellipse, .pricing__description {
+    top: 10%;
+    width: 150%;
+  }
+
+  .pricing__price{
+    font-size: 75px;
+  }
+}
+@media(max-width: 344px){
+
+  .pricing__title {
+
+    font-size: 28px;
+  }
+}

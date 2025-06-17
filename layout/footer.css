@@ -1,0 +1,140 @@
+.footer {
+  width: 100%;
+  padding: 60px 0 40px;
+  position: relative;
+}
+
+.footer__container {
+  padding: 0 20px;
+  width: 100%;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 40px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.footer__products {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.footer__logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer__links {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  text-align: left;
+}
+
+.footer__column h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer__column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer__column a:hover {
+  color: #01b268;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer__social img:hover {
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__bottom p {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.footer__bottom-text {
+  background: linear-gradient(90deg, #12b347 3.5%, #01b268 90.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__ellipse {
+  position: absolute;
+  width: 700px;
+  height: auto;
+  bottom: -530px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(90px);
+}
+
+@media (max-width: 768px) {
+  .footer__links {
+    gap: 40px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__ellipse {
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}

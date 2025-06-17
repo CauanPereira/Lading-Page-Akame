@@ -1,0 +1,261 @@
+.hero__ellipse {
+  z-index: 1;
+  position: absolute;
+  max-width: 100%;
+}
+
+.nav__item {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.hero__headline-image,
+.hero__description-image {
+  position: absolute;
+}
+
+.hero__headline-image {
+  top: 10%;
+  left: 25%;
+  transform: translateX(40px);
+  z-index: 8;
+  max-width: 400px;
+  color: #ffffff;
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.hero__headline-image span {
+  color: #01b268;
+  font-family: "Inter", sans-serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.hero__description-image {
+  left: 35%;
+  transform: translateX(50px);
+  top: 53%;
+  z-index: 8;
+  color: #ffffff;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  line-height: 150%;
+  flex-direction: column;
+  width: 450px;
+}
+
+.hero__description-image span {
+  background: linear-gradient(90deg, #12b347 3.5%, #01b268 90.5%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.hero__image--project {
+  left: -15%;
+  top: 10%;
+  z-index: 2;
+  width: 80%;
+  height: auto;
+}
+
+.hero__image--wellness-1 {
+  z-index: 3;
+  top: 25%;
+  left: -38%;
+  width: 70%;
+  height: auto;
+}
+
+.hero__image--wellness-2 {
+  z-index: 4;
+  top: 19%;
+  left: 17%;
+  width: 63%;
+  height: auto;
+}
+
+.hero__image--finance {
+  z-index: 5;
+  top: 42%;
+  left: -15%;
+  width: 75%;
+  height: auto;
+}
+
+.hero__image--tasks {
+  z-index: 6;
+  top: 59%;
+  left: 37%;
+  width: 45%;
+  height: auto;
+}
+
+.features__title {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.features__icon-wrapper {
+  background-color: #0f993e;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features__label .features__description {
+  font-size: 12px;
+}
+
+.features__label {
+  color: #737373;
+}
+
+.features__description {
+  color: #0d0d0d;
+}
+
+.nav__logo-image {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 850px) {
+  .hero__ellipse {
+    max-width: 200%;
+  }
+
+  .hero__headline-image,
+  .hero__description-image {
+    left: 20%;
+    font-size: 27px;
+  }
+
+  .hero__headline-image {
+    max-width: 300px;
+  }
+
+  .hero__description-image {
+    max-width: 390px;
+    width: 100%;
+  }
+
+  .hero__headline-image span {
+    font-size: 32px;
+  }
+
+  .hero__image--project {
+    left: 15%;
+    width: 70%;
+  }
+
+  .hero__image--wellness-1 {
+    left: 1%;
+    width: 52%;
+    top: 20%;
+  }
+
+  .hero__image--wellness-2 {
+    top: 17%;
+    left: 42%;
+    width: 58%;
+  }
+
+  .hero__image--finance {
+    top: 31%;
+    left: 18%;
+    width: 63%;
+  }
+
+  .hero__image--tasks {
+    left: 60%;
+    top: 47%;
+    width: 38%;
+  }
+
+  .features__title {
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  .features__icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  .features__icon-wrapper {
+    height: 30px;
+    width: 30px;
+  }
+
+  .features__label,
+  .features__description {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 492px) {
+  .hero__headline-image,
+  .hero__description-image {
+    left: -6%;
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero__image--project {
+    left: -8%;
+    top: 10%;
+    width: 462px;
+    height: 230px;
+  }
+
+  .hero__image--wellness-1 {
+    top: 22%;
+    left: -22%;
+    width: 408px;
+    height: 275px;
+  }
+
+  .hero__image--wellness-2 {
+    top: 18%;
+    left: 13%;
+    width: 416px;
+    height: 248px;
+  }
+
+  .hero__image--finance {
+    top: 38%;
+    left: -10%;
+    width: 506px;
+    height: 327px;
+  }
+
+  .hero__image--tasks {
+    top: 55%;
+    left: 25%;
+    width: 297px;
+    height: 225px;
+  }
+
+  .hero__headline-image {
+    left: 50%;
+  }
+
+  .hero__description-image {
+    left: 60%;
+  }
+}

@@ -1,0 +1,134 @@
+.purpose {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.skills__content-left,
+.skills__content-right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.skills__line-right--1,
+.skills__line-right--2,
+.skills__line-right--3,
+.skills__line-left--1,
+.skills__line-left--2,
+.skills__line-left--3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+}
+
+.linha__2,
+.linha__3,
+.linha__1,
+.linha__4,
+.linha__5,
+.linha__6 {
+  width: 95%;
+}
+
+.skills__descriptions-left {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+
+.skills__descriptions-right {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+}
+
+.skills__description {
+  padding: 30px 0;
+  position: relative;
+}
+
+.skills__description--1,
+.skills__description--2,
+.skills__description--3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills__paragraph-left,
+.skills__paragraph-right {
+  max-width: 235px;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+@media (max-width: 850px) {
+
+  .bolinha-esc-1,
+  .bolinha-esc-2,
+  .bolinha-esc-3 {
+    left: 1%;
+  }
+
+  .purpose {
+    padding: 0 10px;
+  }
+
+  .skills__descriptions-left,
+  .skills__descriptions-right {
+    flex-wrap: wrap;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .linha__2,
+  .linha__3,
+  .linha__1,
+  .linha__4,
+  .linha__5,
+  .linha__6 {
+    display: none;
+  }
+
+  .skills__description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skills__line-right--1,
+  .skills__line-right--2,
+  .skills__line-right--3,
+  .skills__line-left--1,
+  .skills__line-left--2,
+  .skills__line-left--3 {
+    width: 100%;
+    max-width: 50px;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+
+  .skills__descriptions-left,
+  .skills__descriptions-right {
+
+    gap: 0px;
+  }
+
+  .skills__line-right--1,
+  .skills__line-right--2,
+  .skills__line-right--3,
+  .skills__line-left--1,
+  .skills__line-left--2,
+  .skills__line-left--3 {
+    max-width: 750px;
+    width: 100%;
+  }
+}

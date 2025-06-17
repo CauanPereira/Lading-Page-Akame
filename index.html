@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Font Awesome (versão mais usada atualmente) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Akami</title>
+  </head>
+  <body>
+    <section class="hero">
+      <img class="hero__ellipse" src="./images/Ellipse_hero.png" alt="" />
+      <div class="hero__container">
+        <div class="hero__content">
+        
+    <header class="header" id="header">
+      <nav class="nav">
+          <div class="nav__logo">
+              <img class="nav__logo-image" src="./images/LogoAkami.svg" alt="Logo Akami" />
+          </div>
+
+          <!-- Menu para Desktop -->
+          <div class="nav__menu">
+              <div class="nav__item">Home</div>
+              <div class="nav__item">Sobre nós</div>
+              <div class="nav__item">Serviços</div>
+              <div class="nav__item">Clientes</div>
+              <div class="nav__item">FAQ</div>
+          </div>
+
+          <!-- Botões para Desktop -->
+          <div class="nav__buttons">
+              <button class="button btn-primary">Acessar</button>
+              <button class="button btn-secondary">Cadastre-se</button>
+          </div>
+          
+          <!-- Ícone Hambúrguer/X (CSS) dentro da sua estrutura original -->
+          <div class="mobile-menu-icon">
+              <button id="menu-button">
+                  <span class="line line-1"></span>
+                  <span class="line line-2"></span>
+                  <span class="line line-3"></span>
+              </button>
+          </div>
+      </nav>
+
+      <!-- Menu Mobile -->
+      <div class="nav__mobile" id="nav-mobile">
+        <img class="ellipse__mobile" src="./images/Ellipse_hero.png" alt="">
+          <div class="nav__mobile-items">
+              <div class="nav__item">Home</div>
+              <div class="nav__item">Sobre nós</div>
+              <div class="nav__item">Serviços</div>
+              <div class="nav__item">Clientes</div>
+              <div class="nav__item">FAQ</div>
+          </div>  
+          <div class="nav__buttons">
+              <button class="button btn-primary">Acessar</button>
+              <button class="button btn-secondary">Cadastre-se</button>
+          </div>
+      </div>  
+    </header>
+
+          <section class="hero__main">
+            <div class="hero__text">
+              <p class="hero__headline-image">
+                O nosso negócio é Acelerar os seus <span>Resultados.</span>
+              </p>
+
+              <p class="hero__description-image">
+                Organize sua vida pessoal, <br />
+                financeira e sua saúde <br />
+                <span>em um piscar de olhos <br /></span>
+                <button class="button button--cta">
+                  Criar conta agora
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12 5L19 12L12 19"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </p>
+            </div>
+
+            <div class="hero__images">
+              <div>
+                <img
+                  class="hero__image--project"
+                  src="./images/projetos-1.png"
+                  alt=""
+                />
+                <img
+                  class="hero__image--wellness-1"
+                  src="./images/saude_e_bem_estar-1.png"
+                  alt=""
+                />
+                <img
+                  class="hero__image--wellness-2"
+                  src="./images/saude_e_bem_estar2 -1.png"
+                  alt=""
+                />
+                <img
+                  class="hero__image--finance"
+                  src="./images/financeiro-1.png"
+                  alt=""
+                />
+                <img
+                  class="hero__image--tasks"
+                  src="./images/tarefas-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="features">
+                <h3 class="features__title">Estrutura Completa</h3>
+                <div class="features__modules">
+                  <div class="features__item">
+                    <div class="features__icon-wrapper">
+                      <img
+                        class="features__icon"
+                        src="./images/gear.svg"
+                        alt="Engrenagem"
+                      />
+                    </div>
+                    <div class="features__text">
+                      <span class="features__label">Mais</span>
+                      <p class="features__description">Estratégia</p>
+                    </div>
+                  </div>
+
+                  <div class="features__item">
+                    <div class="features__icon-wrapper">
+                      <img
+                        class="features__icon"
+                        src="./images/seta.svg"
+                        alt="Seta"
+                      />
+                    </div>
+                    <div class="features__text">
+                      <span class="features__label">Mais</span>
+                      <p class="features__description">Resultados</p>
+                    </div>
+                  </div>
+
+                  <div class="features__item">
+                    <div class="features__icon-wrapper">
+                      <img
+                        class="features__icon"
+                        src="./images/flexa.svg"
+                        alt="Design"
+                      />
+                    </div>
+                    <div class="features__text">
+                      <span class="features__label">Mais</span>
+                      <p class="features__description">Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <section class="purpose">
+            <img
+            class="purpose__ellipse"
+            src="./images/Ellipse-17.png"
+            alt=""
+          />
+            <h1 class="purpose__title">
+              O QUE A <span class="purpose__brand">AKAME</span> FAZ?
+            </h1>
+            <img class="purpose__underline" src="./images/Underline.png" alt="" />
+            <div class="skills">
+              <div class="skills__content-left">
+                <div class="skills__descriptions-left">
+                  <div class="skills__description skills__description--1">
+                    <div class="skills__line-right--1">
+                      <img class="linha__1" src="./images/Linha-1.png" alt="" />
+                      <img
+                        class="circulo__1"
+                        src="./images/Circle.png"
+                        alt=""
+                      />
+                      <img
+                        class="bolinha-esc-1"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="skills__paragraph-left skills__text-left--1">
+                      <p class="skills__text-left">
+                        Buscamos a melhor organização para o seu projeto
+                        pessoal.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="skills__description skills__description--2">
+                    <div class="skills__line-right--2">
+                      <img class="linha__2" src="./images/Linha-2.png" alt="" />
+                      <img
+                        class="circulo__2"
+                        src="./images/Circle.png"
+                        alt=""
+                      />
+                      <img
+                        class="bolinha-esc-2"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="skills__paragraph-left">
+                      <p class="skills__text-left">
+                        Olhamos diariamente para sua saúde e montamos uma
+                        estratégia personalizada te dar dicas de como cuida-la.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="skills__description skills__description--3">
+                    <div class="skills__line-right--3">
+                      <img class="linha__3" src="./images/Linha-3.png" alt="" />
+                      <img
+                        class="circulo__3"
+                        src="./images/Circle.png"
+                        alt=""
+                      />
+                      <img
+                        class="bolinha-esc-3"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="skills__paragraph-left">
+                      <p class="skills__text-left">
+                        Métricas e indicadores de seu financeiro, projeto e
+                        metas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="skills__content-right">
+                <div class="skills__descriptions-right">
+                  <div class="skills__description skills__description--4">
+                    <div class="skills__line-left--1">
+                      <img
+                        class="bolinha-dir-1"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                      <img src="./images/Circle.png" alt="" />
+                      <img class="linha__4" src="./images/Linha-3.png" alt="" />
+                    </div>
+                    <div class="skills__paragraph-right">
+                      <p class="skills__text-right">
+                        Com AKAME AI, você tem uma IA treinada para organização,
+                        melhores métodos para se organizar.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="skills__description skills__description--5">
+                    <div class="skills__line-left--2">
+                      <img
+                        class="bolinha-dir-2"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                      <img src="./images/Circle.png" alt="" />
+                      <img class="linha__5" src="./images/Linha-2.png" alt="" />
+                    </div>
+                    <div class="skills__paragraph-right">
+                      <p class="skills__text-right">
+                        Interface robusta, ágil e simples para todos os
+                        usuários.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="skills__description skills__description--6">
+                    <div class="skills__line-left--3">
+                      <img
+                        class="bolinha-dir-3"
+                        src="./images/Bolinha.svg"
+                        alt=""
+                      />
+                      <img src="./images/Circle.png" alt="" />
+                      <img class="linha__6" src="./images/Linha-1.png" alt="" />
+                    </div>
+                    <div class="skills__paragraph-right">
+                      <p class="skills__text-right">
+                        Anotações, Projetos, e Tarefas, de forma fácil e
+                        exemplificada para você se organiza.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="clients">
+           
+            <div class="clients__container">
+              <div class="clients__backgrounds">
+                <div class="clients__background--left">
+                  <img
+                    class="clients__testimonials clients__testimonial--right-1"
+                    src="./images/Depoimento__dir1.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--right-2"
+                    src="./images/Depoimento__dir2.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--right-3"
+                    src="./images/Depoimento__dir3.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--right-4"
+                    src="./images/Depoimento__dir4.png"
+                    alt=""
+                  />
+                </div>
+                <div class="clients__background--right">
+                  <img
+                    class="clients__testimonials clients__testimonial--left-1"
+                    src="./images/Depoimento __esq1.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--left-2"
+                    src="./images/Depoimento __esq2.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--left-3"
+                    src="./images/Depoimento __esq3.png"
+                    alt=""
+                  />
+                  <img
+                    class="clients__testimonials clients__testimonial--left-4"
+                    src="./images/Depoimento__esq.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="Testimonials">
+              <h1 class="clients__title">
+                <span class="clients__title--highlight">O QUE NOSSOS </span
+                >CLIENTES <br />
+                ESTÃO FALANDO SOBRE NÓS.
+              </h1>
+
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <!-- Card 1 -->
+                  <div class="swiper-slide">
+                    <div class="clients__person">
+                      <div class="clients__person-details">
+                        <img
+                          class="clients__profile-image"
+                          src="./images/Perfil1.png"
+                          alt=""
+                        />
+                        <div class="clients__person-text">
+                          <span class="clients__person-name"
+                            >Rogerio Vieira</span
+                          >
+                          <span class="clients__person-date"
+                            >12.Agosto. 2022</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <img src="./images/icon_google.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="clients__review">
+                      <div class="clients__review-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <img  class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
+                      </div>
+                      <div class="clients__review-content">
+                        <p class="clients__review-text">
+                          "Com a AKAME, meu rendimento pessoal alcançou
+                          resultados incríveis. Recomendo seus serviços para
+                          ajudar qualquer pessoa a se organizar."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="swiper-slide">
+                    <div class="clients__person">
+                      <div class="clients__person-details">
+                        <img
+                          class="clients__profile-image"
+                          src="./images/Perfil2.png"
+                          alt=""
+                        />
+                        <div class="clients__person-text">
+                          <span class="clients__person-name">Maria Silva</span>
+                          <span class="clients__person-date"
+                            >15.Setembro. 2022</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <img src="./images/icon_google.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="clients__review">
+                      <div class="clients__review-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                       <img class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
+                      </div>
+                      <div class="clients__review-content">
+                        <p class="clients__review-text">
+                          "A AKAME transformou meus projetos, aumentando minha
+                          produtividade e gerando resultados reais. Estou muito
+                          satisfeita."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="swiper-slide">
+                    <div class="clients__person">
+                      <div class="clients__person-details">
+                        <img
+                          class="clients__profile-image"
+                          src="./images/Perfil3.png"
+                          alt=""
+                        />
+                        <div class="clients__person-text">
+                          <span class="clients__person-name">Pedro Santos</span>
+                          <span class="clients__person-date"
+                            >3.Outubro. 2022</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <img src="./images/icon_google.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="clients__review">
+                      <div class="clients__review-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                       <img  class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
+                      </div>
+                      <div class="clients__review-content">
+                        <p class="clients__review-text">
+                          "Fantástico! A organização que a AKAME proporciona é
+                          impressionante. Minha produtividade aumentou
+                          significativamente."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="swiper-slide">
+                    <div class="clients__person">
+                      <div class="clients__person-details">
+                        <img
+                          class="clients__profile-image"
+                          src="./images/Perfil4.png"
+                          alt=""
+                        />
+                        <div class="clients__person-text">
+                          <span class="clients__person-name">Ana Costa</span>
+                          <span class="clients__person-date"
+                            >8.Novembro. 2022</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <img src="./images/icon_google.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="clients__review">
+                      <div class="clients__review-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                       <img  class="clients__confere" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADyklEQVR4nO1aS2gUQRDd4BdUPHoQFLPdURQE8aaCHvydBBFBMCoqbNUEc/DmQQ3iSREUwYN6NOBdBEMSEDwIIh4FLyqooFH31YgfNGpGaiZZM5vJ7s5uZ2aJFtSld7u73lRV16e7UPhP/xAZwkFDeD7OBwvtTCuPvFxoSW4ZRtkQhopeeZOOGw/dljFmWYKIMaZj+lsXlTcbxrDOsSz9ukbeOAqG5PxfYccFJgwZxmh8XAId09/iACXQNXIFsfrYhyWWINUCp2aST50lLM1I7KDDEC5awndLgGUMWpZ7LYOogMFAqC1dW/dgXNA9ncMosr/LmdANsiF/h3MghnA2cyCMMzMB5GYOQG44ED3oMJ6/U7+KIVy3hJGsgVjCiIJRa1BZmvIZdbbMBed6rAdAaiDyNX/BpcrU5EtqIONRt82AoJweSBiB2860BpuJ2AP5Cy5xJgyobHUBaPIW5k4u0o5mzYfwzLKcsywPpwEjKmPNRFMz0RzN5r71/O3FnvI6y/K0gTn9bebgeGI8bA339/ydhuRzy46vNUJmAEg+WcKJwv5gTmQN5QOG8aNhE2QMTwtEC57qWmEm2DAeWc/vrHxAT45awu8UWhxTWXM9dg3L1Y2lYF7FL0n2WsavlB9iuDYID91JlV1lAQVZQm+Uf8ntBp2y8hUN49Tk/Yok26LaI7VGRyfK5kQQDZkVYWDV8c/LJuZ1lrDCkJw0jBc155XQO3k/nWcJ75vXLio9gDgQljcpFnlXLJV3T56/tS+Ya8mnqHqcAv7ylHjFeOzAVF+3CCTZVCKb/7g8Hsxwf+JkqvyH5YoLf7OJQBo1ral8rbpOGM8Q7upx2lX6sCYGwvO3uzkZkWxaSkXGoVrOngbM2v3B/CJjT2ysZ2SxJXnVKgjDGFVZE0G0HhTrFz2GcMmFSZl6x2+rAXFaVau2e8rrDOGnG99A7YDYcopC8s2wbEha27LccQNC6msl8ehMz09Nb7BgqqbdgbD1kkZXabxh9MU0TfLANRBbK413VlgRvnd5WB+Zq+xzCoAaKKxclrrRNYPcVb/JvNTNrTZp9OMQhgqzoR1kCZgVDTrL8jW9RvQupP1M62KTFzv+jrCBzLiRaxObtZDTuxIHFz9hRz57DVwvuCbLOJ29OeG0cyDac8pcI57eiTinoCO8M4kuQyWMMy77w+FaGJzxy9AkWt/9dpEhfHQAAqkj9sw/GIhS7MQHA4SfUcbQZg8GKk84WPpVMypkVwlbdFxL0eonHJZwOPaEQ7Wpzz+q0v62o6ihIa+V69bY/2mW0R9iyIG/EyZ3+wAAAABJRU5ErkJggg==" alt="instagram-check-mark">
+                      </div>
+                      <div class="clients__review-content">
+                        <p class="clients__review-text">
+                          "A melhor decisão que tomei foi usar a AKAME. O
+                          sistema é intuitivo e me ajuda a manter tudo
+                          organizado de forma eficiente."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Navegação -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="clients__cta">
+                <button class="button clients__btn">QUERO CRESCER MAIS
+  
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+          <script src="./js/carrosel.js"></script>
+          <script src="./js/animations.js"></script>
+          <script src="./js/menu.js"></script>
+
+          <section class="pricing">
+            <img
+              class="pricing__ellipse"
+              src="./images/Ellipse__esquerda.png"
+              alt=""
+            />
+            <div class="pricing__container">
+              <h1 class="pricing__title">
+                Toda sua vida organizada de
+                <span class="pricing__title--highlight"
+                  >forma simples na <br />
+                  sua mão em qualquer lugar.</span
+                >
+              </h1>
+              <div class="pricing__card">
+                <h1 class="pricing__text">Plano mensal por apenas:</h1>
+                <h2 class="pricing__price">06,90</h2>
+                <h3 class="pricing__description">
+                  Todos os módulos disponíveis. <br />
+                  Inteligência artificial inclusa
+                </h3>
+                <button class="button button--pricing">
+                  Quero me organizar
+                </button>
+                <div class="partners">
+                  <img src="./images/parceirias1.png" alt="" />
+                  <img src="./images/parceirias2.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="chess">
+            <div class="chess__card">
+              <h1 class="chess__title">
+                Cancele,
+                <span class="chess__description--highlight"
+                  >quando quiser!</span
+                >
+              </h1>
+              <p class="chess__description">
+                <span class="chess__description--highlight">Na AKAME, </span>
+                seu sucesso é nossa <br />
+                prioridade. Nós descartamos penalidades <br />
+                para garantir sua tranquilidade. Se nossos <br />
+                serviços de organização<span
+                  class="chess__description--highlight"
+                  >não estiverem <br />
+                  alinhados com seus objetivos,</span
+                >
+                você tem <br />
+                total liberdade para cancelar, sem <br />
+                nenhum custo de rescisão, desde que <br />
+                cumpra o aviso prévio.
+              </p>
+            </div>
+            <div class="chess__image-container">
+              <img
+                class="chess__image"
+                src="./images/pecas__xadrez.png"
+                alt=""
+              />
+              <img src="./" alt="">
+            </div>
+          </section>
+
+          <section class="accordion">
+            <div class="container__accordion">
+              <div class="content__acordion">
+            
+                <div class="accordion__options">
+                  <img
+                    class="accordion__icon"
+                    src="./images/icon__seta.svg"
+                    alt=""
+                  />
+                  <p>Por que a AKAME é a melhor escolha?</p>
+                </div>
+
+                <div class="accordion__options">
+                  <img
+                    class="accordion__icon"
+                    src="./images/icon__seta.svg"
+                    alt=""
+                  />
+                  <p>Como a AKAME pode ajudar a me organizar?</p>
+                </div>
+
+                <div class="accordion__options">
+                  <img
+                    class="accordion__icon"
+                    src="./images/icon__seta.svg"
+                    alt=""
+                  />
+                  <p>Quão rápido posso esperar resultados com a AKAME?</p>
+                </div>
+
+                <div class="accordion__options">
+                  <img
+                    class="accordion__icon"
+                    src="./images/icon__seta.svg"
+                    alt=""
+                  />
+                  <p>Como faço para iniciar com a AKAME?</p>
+                </div>
+
+                <div class="accordion__options">
+                  <img
+                    class="accordion__icon"
+                    src="./images/icon__seta.svg"
+                    alt=""
+                  />
+                  <p>Quais serviços vocês prestam?</p>
+                </div>
+              </div>
+
+              <div class="accordion__faq">
+                <div class="accordion__elements">
+                  <h1 class="accordion__description">FAQ</h1>
+                  <p class="accordion__title-1">Perguntas Frequentes</p>
+                </div>
+                <div class="accordion__content">
+                  <h1 class="accordion__title-2">
+                    Ainda ficou com alguma dúvida?
+                  </h1>
+                  <p class="accordion__title-3">
+                    Chame no WhatsApp, iremos te responder, <br />
+                    não é nenhuma assistente virtual, bot e <br />
+                    muito menos o estagiário.
+                  </p>
+                  <button class="button accordion__btn">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Chamar no WhatsApp
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script src="./js/accordion.js"></script>
+
+          <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__content">
+                <div class="footer__logo">
+                  <img src="./images/LogoAkami.svg" alt="Logo Akami" />
+                </div>
+               
+                <div class="footer__links">
+
+                  <div class="footer__contact">
+                    <h3>Contato</h3>
+                    <a href="mailto:contato@akami.com">contato@akami.com</a>
+                    <a href="tel:+5511999999999">(11) 99999-9999</a>
+                    <a href="https://github.com/akami">Github</a>
+                  </div>
+
+                  <div class="footer__products">
+                    <h3>Produtos</h3>
+                    <a href="#">Documentos</a>
+                    <a href="#">Planos</a>
+                    <a href="#">FAQ</a>
+                  </div>
+                 
+                  <div class="footer__column">
+                    <h3>Redes Sociais</h3>
+                    <div class="footer__social">
+                      <a class="footer__social-link" href="#">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                      </a>
+                      <a class="footer__social-link" href="#">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                      </a>
+                      <a class="footer__social-link" href="#">
+                        <i class="fa-brands fa-linkedin"></i>LinkedIn
+                      </a>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__bottom">
+                <p>© 2024 Akami. Todos os direitos reservados.</p>
+                <p class="footer__bottom-text">Desenvolvido por Cauan Pereira Firmo</p>
+                <img class="footer__ellipse" src="./images/Ellipse-17.png" alt="" />
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

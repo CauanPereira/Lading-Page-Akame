@@ -1,0 +1,173 @@
+.clients {
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+  padding: 40px 30px;
+  position: relative;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  height: auto;
+  background: #222222;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.clients__container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.clients__backgrounds {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.clients__background--left,
+.clients__background--right {
+  width: 50%;
+  min-height: 448px;
+  position: relative;
+}
+
+.clients__testimonials {
+  position: absolute;
+  max-width: 400px;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #01b268;
+}
+
+.clients__title {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+.clients__cta {
+  padding-top: 20px;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.Testimonials {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__cards {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  gap: 100px;
+}
+
+.clients__cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.clients__person {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clients__person-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.clients__person-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.clients__review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.clients__review-icons {
+  margin-top: 15px;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.clients__review-content {
+  max-width: 327px;
+  width: 100%;
+}
+
+.clients__carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+@media (max-width: 768px) {
+  .swiper {
+    padding: 40px 20px;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+  }
+}

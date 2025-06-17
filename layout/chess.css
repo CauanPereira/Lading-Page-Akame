@@ -1,0 +1,57 @@
+.chess {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.chess__card {
+  width: 520px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 24px 0px 35px 39px;
+  transform: translateX(60px);
+  
+}
+
+.chess__image-container {
+  width: 40%;
+  height: 410px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .chess {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .chess__card {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  .chess__image-container {
+    width: 100%;
+    max-width: 530px;
+  }
+
+  .chess__card {
+    transform: translateX(0px);
+  }
+}

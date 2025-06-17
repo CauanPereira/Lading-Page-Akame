@@ -1,0 +1,161 @@
+/* --- Header e Barra de Navegação --- */
+.header {
+  width: 100%;
+  padding: 20px 0px;
+  position: relative;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+/* --- Menu Desktop --- */
+.nav__menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.nav__item {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav__item:hover {
+  color: #01b268;
+}
+
+.nav__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* --- Ícone do Menu Mobile (Hambúrguer/X) --- */
+.mobile-menu-icon {
+  display: none; /* Escondido em telas grandes */
+}
+
+.mobile-menu-icon button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+}
+
+/* As 3 linhas do ícone */
+.mobile-menu-icon .line {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu-icon .line-1 {
+  top: 0;
+}
+.mobile-menu-icon .line-2 {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mobile-menu-icon .line-3 {
+  bottom: 0;
+}
+
+/* Animação para transformar em 'X' */
+.header.menu-open .line-1 {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+.header.menu-open .line-2 {
+  opacity: 0;
+}
+.header.menu-open .line-3 {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+/* --- LÓGICA DO MENU MOBILE --- */
+.nav__mobile {
+  /* Posicionado para descer a partir do header */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #0d0d0d;
+
+  /* **PONTO CHAVE DA CORREÇÃO**: Animação com max-height */
+  max-height: 0; /* Começa com altura 0 (invisível) */
+  overflow: hidden; /* Esconde o conteúdo que transborda */
+  transition: max-height 0.4s ease-in-out;
+  padding: 0 2rem;
+  display: none;
+  z-index: 2;
+}
+
+/* Classe '.open' que o JavaScript adiciona para abrir o menu */
+.nav__mobile.open {
+  max-height: 400px; /* Expande a altura para mostrar o conteúdo */
+  border-top: none;
+}
+
+.nav__mobile-items {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.nav__mobile .nav__item {
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.nav__mobile .nav__buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+/* --- Media Query para Ativar o Modo Mobile --- */
+@media screen and (max-width: 960px) {
+  /* Esconde os menus do desktop */
+  .nav__menu,
+  .nav > .nav__buttons {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: block;
+  }
+  .nav__buttons {
+    width: 35%;
+  }
+  .ellipse__mobile {
+    position: absolute;
+    top: -40%;
+    right: 0%;
+    transform: rotate(180deg);
+    z-index: 1;
+    width: 100%;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+
+  /* Mostra o ícone de hambúrguer */
+  .mobile-menu-icon {
+    display: block;
+  }
+}
