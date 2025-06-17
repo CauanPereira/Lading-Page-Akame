@@ -3,7 +3,6 @@
   position: absolute;
   max-width: 100%;
 }
-
 .nav__item {
   font-weight: 700;
   color: #ffffff;
@@ -106,14 +105,65 @@
   color: #ffffff;
 }
 
+.features__icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Animação para o ícone de engrenagem */
+.features__item:first-child .features__icon {
+  transition: transform 0.5s ease;
+}
+
+.features__item:first-child:hover .features__icon {
+  transform: rotate(180deg);
+}
+
+/* Animação para o ícone de seta */
+.features__item:nth-child(2) .features__icon {
+  transition: transform 0.3s ease;
+}
+
+.features__item:nth-child(2):hover .features__icon {
+  animation: pulseArrow 0.5s ease;
+}
+
+@keyframes pulseArrow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animação para o ícone de flexa */
+.features__item:last-child .features__icon {
+  transition: transform 0.9s ease;
+}
+
+.features__item:last-child:hover .features__icon {
+  transform: rotate(360deg);
+}
+
 .features__icon-wrapper {
+  width: 48px;
+  height: 48px;
   background-color: #0f993e;
   border-radius: 50%;
-  height: 45px;
-  width: 45px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.features__item:hover .features__icon-wrapper {
+  background-color: #0f993e;
+  transform: scale(1.1);
 }
 
 .features__label .features__description {
