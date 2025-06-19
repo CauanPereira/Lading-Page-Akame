@@ -91,6 +91,7 @@
   padding: 34px;
   border-radius: 12px;
   text-align: left;
+  height: auto;
 }
 
 .clients__profile-image--rounded {
@@ -185,6 +186,11 @@
 
   .clients__testimonial--left-4 {
     top: 70%;
+  }
+
+  .swiper-slide{
+
+    width:50% ;
   }
 }
 

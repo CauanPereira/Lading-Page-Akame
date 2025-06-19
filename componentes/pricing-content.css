@@ -59,36 +59,29 @@
   margin-bottom: 20px;
 }
 
-
-
 @media (max-width: 768px) {
   .pricing__title {
-
     font-size: 30px;
     padding: 0 20px;
   }
 
-  .pricing__text{
-
+  .pricing__text {
     font-size: 20px;
   }
 
-  .pricing__ellipse, .pricing__description {
+  .pricing__ellipse,
+  .pricing__description {
     top: 10%;
     width: 150%;
   }
 
-  .pricing__price{
+  .pricing__price {
     font-size: 75px;
   }
 }
 
-
-
-@media(max-width: 344px){
-
+@media (max-width: 344px) {
   .pricing__title {
-
     font-size: 28px;
   }
 }
