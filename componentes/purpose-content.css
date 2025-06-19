@@ -77,6 +77,10 @@
     font-size: 30px;
   }
 
+  .skills__text-left, .skills__text-right{
+    font-size: 15px;
+  }
+
   .purpose__underline {
     width: 170px;
   }

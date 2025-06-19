@@ -154,6 +154,12 @@
   }
 }
 
+@media (max-width: 854px) {
+  .features__modules {
+   width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .hero__main {
     flex-direction: column;
