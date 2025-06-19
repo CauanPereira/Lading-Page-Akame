@@ -66,16 +66,24 @@
   padding: 20px 0px;
 }
 
-@media (max-width: 850px) {
+@media(max-width: 1100px){
 
+  .skills__line-right--1,
+  .skills__line-right--2,
+  .skills__line-right--3,
+  .skills__line-left--1,
+  .skills__line-left--2,
+  .skills__line-left--3 {
+    max-width: 290px;
+
+  }
+}
+
+@media (max-width: 850px) {
   .bolinha-esc-1,
   .bolinha-esc-2,
   .bolinha-esc-3 {
-    left: 1%;
-  }
-
-  .purpose {
-    padding: 0 10px;
+    left: 2%;
   }
 
   .skills__descriptions-left,
@@ -110,8 +118,6 @@
     width: 100%;
     max-width: 50px;
   }
-
-
 }
 
 @media (min-width: 1440px) {
