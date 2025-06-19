@@ -129,6 +129,14 @@
   gap: 1rem;
 }
 
+
+@media (max-width: 1040px) {
+
+  .nav__menu{
+    gap: 20px;
+  }
+} 
+
 /* --- Media Query para Ativar o Modo Mobile --- */
 @media screen and (max-width: 960px) {
   /* Esconde os menus do desktop */
@@ -159,3 +167,4 @@
     display: block;
   }
 }
+
