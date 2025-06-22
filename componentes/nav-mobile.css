@@ -26,11 +26,29 @@
   text-decoration: none;
   font-weight: 500;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.4s ease;
+  position: relative;
+}
+
+.nav__item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #0f993e 3.5%, #01b268 90.5%);
+  transition: width 0.4s ease, left 0.4s ease;
 }
 
 .nav__item:hover {
   color: #01b268;
+}
+
+.nav__item:hover::after {
+  width: 100%;
+  left: 0;
+  transform: translateX(0);
 }
 
 .nav__buttons {
@@ -139,8 +157,8 @@
   .nav {
     gap: 30px;
   }
-  .nav__logo-image{
-    width:90%;
+  .nav__logo-image {
+    width: 90%;
   }
 }
 
