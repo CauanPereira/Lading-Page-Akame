@@ -5,7 +5,7 @@
   font-family: "Inter", sans-serif;
   font-weight: 700;
   width: 100%;
-  overflow: visible;  
+  overflow: visible;
 }
 
 .reveal {
@@ -17,7 +17,7 @@
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
-} 
+}
 
 .hero__main {
   display: flex;
@@ -36,18 +36,14 @@
   position: relative;
   background-color: #0d0d0d;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .hero__content {
   position: relative;
   min-height: 100vh;
   height: auto;
-  overflow: visible;
   width: 100%;
 }
-
-
 
 .hero__text {
   width: 50%;
@@ -129,7 +125,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 8px;
   gap: 10px;
   width: 95%;
@@ -156,7 +152,7 @@
 
 @media (max-width: 854px) {
   .features__modules {
-   width: 100%;
+    width: 100%;
   }
 }
 
@@ -178,13 +174,12 @@
     position: relative;
     top: 22%;
     left: 5%;
-    transform: none;
     margin: 20px auto;
   }
 
   .features__modules {
     width: 100%;
-    max-width: 300px;
+    max-width: 320px;
   }
 }
 
@@ -194,5 +189,3 @@
     left: 10%;
   }
 }
-
-

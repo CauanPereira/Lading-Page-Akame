@@ -2,6 +2,7 @@
   z-index: 1;
   position: absolute;
   max-width: 100%;
+  pointer-events: none;
 }
 .nav__item {
   font-weight: 700;
@@ -58,7 +59,9 @@
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+  margin-bottom: 10px;
 }
+
 
 .hero__image--project {
   left: -15%;
@@ -247,8 +250,8 @@
   }
 
   .features__icon-wrapper {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
   }
 
   .features__label,
@@ -264,6 +267,32 @@
   .hero__description-image {
     left: -6%;
     font-size: 27px;
+  }
+}
+
+@media(max-width: 370px){
+
+  .hero__headline-image{
+    font-size: 27px;
+  }
+
+  .hero__headline-image span{
+    font-size: 29px;
+  }
+
+  .hero__description-image{
+    left: -13%; 
+    font-size: 22px;
+  }
+  .hero__description-image span{
+    font-size: 26px;
+  }
+
+  .features__modules{
+    width: 90%;
+  }
+  .features__description{
+    font-size: 8px;
   }
 }
 

@@ -3,7 +3,7 @@
   width: 100%;
   padding: 20px 0px;
   position: relative;
-  z-index: 100;
+  z-index: 20;
 }
 
 .nav {
@@ -129,13 +129,20 @@
   gap: 1rem;
 }
 
-
 @media (max-width: 1040px) {
-
-  .nav__menu{
+  .nav__menu {
     gap: 20px;
   }
-} 
+}
+
+@media (max-width: 320px) {
+  .nav {
+    gap: 30px;
+  }
+  .nav__logo-image{
+    width:90%;
+  }
+}
 
 /* --- Media Query para Ativar o Modo Mobile --- */
 @media screen and (max-width: 960px) {
@@ -167,4 +174,3 @@
     display: block;
   }
 }
-

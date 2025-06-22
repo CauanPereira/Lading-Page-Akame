@@ -49,6 +49,7 @@
     <title>Akami</title>
   </head>
   <body>
+    <html>
     <section class="hero">
       <img class="hero__ellipse" src="./images/Ellipse_hero.png" alt="" />
       <div class="hero__container">
@@ -62,11 +63,12 @@
 
           <!-- Menu para Desktop -->
           <div class="nav__menu">
-              <div class="nav__item">Home</div>
-              <div class="nav__item">Sobre nós</div>
-              <div class="nav__item">Serviços</div>
-              <div class="nav__item">Clientes</div>
-              <div class="nav__item">FAQ</div>
+              <a href="#home" class="nav__item">Home</a>
+              <a href="#sobre" class="nav__item">Sobre nós</a>
+              <a href="#servicos" class="nav__item">Serviços</a>
+              <a href="#clientes" class="nav__item">Clientes</a>
+              <a href="#contatos" class="nav__item">Contatos</a>
+              <a href="#faq" class="nav__item">FAQ</a>
           </div>
 
           <!-- Botões para Desktop -->
@@ -89,11 +91,12 @@
       <div class="nav__mobile" id="nav-mobile">
         <img class="ellipse__mobile" src="./images/Ellipse_hero.png" alt="">
           <div class="nav__mobile-items">
-              <div class="nav__item">Home</div>
-              <div class="nav__item">Sobre nós</div>
-              <div class="nav__item">Serviços</div>
-              <div class="nav__item">Clientes</div>
-              <div class="nav__item">FAQ</div>
+              <a href="#home" class="nav__item">Home</a>
+              <a href="#sobre" class="nav__item">Sobre nós</a>
+              <a href="#servicos" class="nav__item">Serviços</a>
+              <a href="#clientes" class="nav__item">Clientes</a>
+              <a href="#contatos" class="nav__item">Contatos</a>
+              <a href="#faq" class="nav__item">FAQ</a>
           </div>  
           <div class="nav__buttons">
               <button class="button btn-primary">Acessar</button>
@@ -102,13 +105,13 @@
       </div>  
     </header>
 
-          <section class="hero__main">
+          <section class="hero__main" id="home">
             <div class="hero__text">
               <p class="hero__headline-image">
                 O nosso negócio é Acelerar os seus <span>Resultados.</span>
               </p>
 
-              <p class="hero__description-image">
+              <p class="hero__description-image hero__font">
                 Organize sua vida pessoal, <br />
                 financeira e sua saúde <br />
                 <span>em um piscar de olhos <br /></span>
@@ -218,7 +221,7 @@
             </div>
           </section>
       
-          <section class="purpose">
+          <section class="purpose" id="sobre">
             <img
             class="purpose__ellipse"
             src="./images/Ellipse-17.png"
@@ -358,7 +361,7 @@
             </div>
           </section>
 
-          <section class="clients">
+          <section class="clients" id="clientes">
            
             <div class="clients__container">
               <div class="clients__backgrounds">
@@ -596,7 +599,7 @@
           <script src="./js/animations.js"></script>
           <script src="./js/menu.js"></script>
 
-          <section class="pricing">
+          <section class="pricing" id="servicos">
             <img
               class="pricing__ellipse"
               src="./images/Ellipse__esquerda.png"
@@ -664,7 +667,7 @@
             </div>
           </section>
 
-          <section class="accordion">
+          <section class="accordion" id="faq">
             <div class="container__accordion">
               <div class="content__acordion">
             
@@ -738,7 +741,7 @@
           </section>
           <script src="./js/accordion.js"></script>
 
-          <footer class="footer">
+          <footer id="contatos" class="footer">
             <div class="footer__container">
               <div class="footer__content">
                 <div class="footer__logo">
@@ -758,7 +761,7 @@
                     <h3>Produtos</h3>
                     <a href="#">Documentos</a>
                     <a href="#">Planos</a>
-                    <a href="#">FAQ</a>
+                    <a href="#faq">FAQ</a>
                   </div>
                  
                   <div class="footer__column">
@@ -791,5 +794,6 @@
         </div>
       </div>
     </section>
+    </html>
   </body>
 </html>
