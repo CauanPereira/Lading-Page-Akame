@@ -111,6 +111,7 @@
   width: 24px;
   height: 24px;
   transition: all 0.3s ease;
+
 }
 
 /* Animação para o ícone de engrenagem */
@@ -161,6 +162,7 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .features__item:hover .features__icon-wrapper {
