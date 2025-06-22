@@ -59,7 +59,7 @@
   .chess__title {
     font-size: 34px;
   }
-  .chess__card{
+  .chess__card {
     max-width: 400px;
   }
 }
@@ -69,5 +69,14 @@
     transform: translateX(0);
     width: 180%;
   }
+}
 
+@media (max-width: 370px) {
+  .chess__title {
+    font-size: 30px;
+  }
+  .chess__description{
+
+    font-size: 12px;
+  }
 }

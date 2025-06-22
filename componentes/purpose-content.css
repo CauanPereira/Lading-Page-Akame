@@ -116,6 +116,12 @@
   }
 }
 
+@media (max-width: 370px) {
+  .purpose__title {
+    font-size: 28px;
+  }
+}
+
 @media (min-width: 1440px) {
   .bolinha-esc-1 {
     left: 96.7%;

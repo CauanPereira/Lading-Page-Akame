@@ -80,8 +80,26 @@
   }
 }
 
-@media (max-width: 344px) {
+@media (max-width: 370px) {
   .pricing__title {
-    font-size: 28px;
+    font-size: 23px;
+  }
+
+  .pricing__text{
+    font-size: 19px;
+  }
+
+  .pricing__price{
+    font-size: 70px;
+  }
+
+  .pricing__description{
+    font-size: 18px;
+  }
+  .partners__advertisements-1{
+    width: 95%;
+  }
+  .partners__advertisements-2{
+    width: 80%;
   }
 }

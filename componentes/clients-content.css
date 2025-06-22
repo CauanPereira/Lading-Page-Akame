@@ -204,3 +204,24 @@
     display: none;
   }
 }
+
+@media (max-width: 370px) {
+  .clients__title {
+    font-size: 23px;
+    padding: 0 10px;
+  }
+
+  .clients__person-name{
+    font-size: 15px;
+  }
+
+  .clients__person-date{
+
+    font-size: 13px;
+  }
+
+  .clients__review-text{
+    font-size: 12px;
+  } 
+   
+}

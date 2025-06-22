@@ -79,3 +79,33 @@
     font-size: 17px;
   }
 }
+
+@media(max-width:370px){
+
+  .accordion__options{
+    width: 111%;
+    font-size: 14px;
+  }
+
+  .accordion__icon{
+    width: 17px;
+    height: 17px;
+  }
+  .accordion__answer{
+    font-size: 12px;
+  }
+  .accordion__description{
+    font-size: 115px;
+  }
+
+  .accordion__title-1{
+    font-size: 25px;
+  }
+  .accordion__title-2{
+
+    font-size: 40px;
+  }
+  .accordion__title-3{
+    font-size: 15px;
+  }
+}

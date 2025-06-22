@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Seleciona os elementos que terão a animação
   const elementsToReveal = document.querySelectorAll(
-    ".purpose, .pricing, .clients, .accordion__container, .hero__text, .hero__images, .features, .skills__description, .pricing__card, .clients__testimonial, .accordion__options, .chess__card, .chess__image-container, .accordion__content, .accordion__btn, .footer, .accordion__description"
+    ".purpose, .pricing, .clients, .accordion__container, .hero__text, .hero__images, .features, .skills__description, .pricing__card, .clients__testimonial, .accordion__options, .chess__card, .chess__image-container, .accordion__content, .accordion__btn, .footer, .accordion__description, .accordion__answer"
   );
 
   // Configuração do Intersection Observer

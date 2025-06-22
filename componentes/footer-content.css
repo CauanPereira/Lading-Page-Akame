@@ -104,7 +104,6 @@
 }
 
 @media (max-width: 768px) {
-
   .footer__products h3,
   .footer__column h3,
   .footer__contact h3 {
@@ -116,3 +115,23 @@
     font-size: 11px;
   }
 }
+
+@media (max-width: 370px) {
+  .footer__contact a, .footer__products a, .footer__column a {
+    font-size: 9px;
+  }
+
+  .footer__links{
+    gap: 20px;
+  }
+  .footer__column h3 {
+    font-size: 13px;
+  }
+
+  .footer__bottom p {
+    color: #ffffff;
+    font-size: 12px;
+  }
+  
+}
+
