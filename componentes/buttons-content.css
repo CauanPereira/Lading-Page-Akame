@@ -16,6 +16,25 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 370px) {
+  .button {
+    padding: 15px 37px;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px -4px #28d07e;
+    background: transparent;
+  }
+
+  .button:hover {
+    transform: scale(1.06);
+  }
+}
+
 /* Botões do Menu */
 .nav .button {
   padding: 10px;
@@ -75,10 +94,8 @@
   margin-bottom: 20px;
 }
 
-@media(max-width: 370px){
-
-  .pricing__container .button{
-
+@media (max-width: 370px) {
+  .pricing__container .button {
     max-width: 240px;
     height: 58px;
   }
@@ -116,7 +133,7 @@
 }
 
 .accordion__faq .button:hover {
-  transform: scale(110%);
+  transform: scale(1.1);
 }
 
 .accordion__faq .button i {
@@ -149,7 +166,11 @@
 
 @media (max-width: 370px) {
   .accordion__faq .button {
-    width: 96%;
-    font-size: 15px
-;  }
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .accordion__faq .button:hover {
+    transform: scale(1.05);
+  }
 }
